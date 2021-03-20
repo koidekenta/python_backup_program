@@ -14,6 +14,7 @@ directory_list = []
 
 # バックアップを取得したいディレクトリがなければ終わる
 if os.path.isdir(backup_src_directory_path) == False:
+  print("バックアップ先のディレクトリがありません")
   sys.exit()
 
 # バックアップ先のディレクトリがなければ作成する
